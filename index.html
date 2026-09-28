@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ember & Clay — Handmade goods for a slower kitchen</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">Ember <span>&</span> Clay</a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html" class="is-active">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">Our Studio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="cart.html" class="nav-cart">
+      Basket <span class="cart-badge" data-cart-count>0</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <div>
+      <p class="hero-stamp"><span class="dot"></span>Thrown, glazed and sewn by hand in our Vermont studio</p>
+      <h1>Everyday things, <em>made slowly.</em></h1>
+      <p class="hero-lede">We're a small studio of potters and stitchers making mugs, bowls, candles and linens meant to be used daily — and to get better with the years, not worse.</p>
+      <div class="hero-cta">
+        <a href="shop.html" class="btn">Browse the shop</a>
+        <a href="about.html" class="btn btn--ghost">Meet the makers</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="2.5">
+        <path d="M28 34h50v46c0 12-11 22-25 22s-25-10-25-22V34z"/>
+        <path d="M78 46h8c8 0 14 6 14 14s-6 14-14 14h-8"/>
+        <path d="M34 30c2-6 8-10 15-10s13 4 15 10" stroke-linecap="round"/>
+        <path d="M35 44c4 8 4 16 0 24" stroke-width="1.6" opacity=".5"/>
+        <path d="M45 44c4 8 4 16 0 24" stroke-width="1.6" opacity=".5"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<div class="rough-divider into-deep"></div>
+
+<section class="section section--linen-deep">
+  <div class="container">
+    <div class="value-strip">
+      <div class="value-item">
+        <span class="num">01</span>
+        <div>
+          <h4>Thrown in small batches</h4>
+          <p>No molds, no factory lines — every piece passes through one person's hands.</p>
+        </div>
+      </div>
+      <div class="value-item">
+        <span class="num">02</span>
+        <div>
+          <h4>Built for daily use</h4>
+          <p>Dishwasher- and microwave-safe stoneware that's meant to earn a chip or two.</p>
+        </div>
+      </div>
+      <div class="value-item">
+        <span class="num">03</span>
+        <div>
+          <h4>Shipped with care</h4>
+          <p>Wrapped by the same hands that made it, with a note about how it was fired.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">From the shop</p>
+        <h2>A few current favorites</h2>
+      </div>
+      <a href="shop.html" class="btn btn--ghost">See everything</a>
+    </div>
+    <div class="product-grid" id="featured-grid"></div>
+  </div>
+</section>
+
+<div class="rough-divider" style="background:var(--ink)"></div>
+
+<section class="section section--ink">
+  <div class="container">
+    <div class="testimonial">
+      <blockquote>"I've dropped this mug twice on tile and it just... didn't care. Nine years in and it's still the one I reach for every morning."</blockquote>
+      <cite>— Priya N., customer since 2017</cite>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="newsletter">
+      <div>
+        <h3>Come by the studio, virtually</h3>
+        <p>One email a month — new glazes, seconds sales, and the occasional photo of a kiln opening.</p>
+      </div>
+      <form onsubmit="event.preventDefault(); this.querySelector('button').textContent='Thanks — you\'re in.';">
+        <input type="email" placeholder="you@example.com" required>
+        <button type="submit" class="btn">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a href="index.html" class="logo">Ember <span>&</span> Clay</a>
+        <p>A small pottery and goods studio, hand-making kitchenware and home pieces meant to last decades, not seasons.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Shop</h5>
+        <ul>
+          <li><a href="shop.html">Kitchen</a></li>
+          <li><a href="shop.html">Home</a></li>
+          <li><a href="shop.html">Wearables</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Studio</h5>
+        <ul>
+          <li><a href="about.html">Our story</a></li>
+          <li><a href="about.html">The makers</a></li>
+          <li><a href="contact.html">Visit us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Help</h5>
+        <ul>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="cart.html">Your basket</a></li>
+          <li><a href="contact.html">Shipping & returns</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Ember & Clay Studio. Made by hand, listed on the web.</span>
+      <span>Brattleboro, Vermont</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
